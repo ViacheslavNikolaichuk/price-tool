@@ -1,0 +1,36 @@
+D:\SteamItem_price_tool\SteamItem_price_tool\bin\Debug\SteamItem_price_tool.exe.config
+D:\SteamItem_price_tool\SteamItem_price_tool\bin\Debug\SteamItem_price_tool.exe
+D:\SteamItem_price_tool\SteamItem_price_tool\bin\Debug\SteamItem_price_tool.pdb
+D:\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.csprojResolveAssemblyReference.cache
+D:\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.Form1.resources
+D:\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.Properties.Resources.resources
+D:\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.csproj.GenerateResource.Cache
+D:\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.csproj.CoreCompileInputs.cache
+D:\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.exe
+D:\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.pdb
+D:\SteamItem_price_tool\SteamItem_price_tool\bin\Debug\ClassLibrary.dll
+D:\SteamItem_price_tool\SteamItem_price_tool\bin\Debug\ClassLibrary.pdb
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\SteamItem_price_tool\bin\Debug\SteamItem_price_tool.exe.config
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\SteamItem_price_tool\bin\Debug\SteamItem_price_tool.exe
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\SteamItem_price_tool\bin\Debug\SteamItem_price_tool.pdb
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\SteamItem_price_tool\bin\Debug\ClassLibrary.dll
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\SteamItem_price_tool\bin\Debug\ClassLibrary.pdb
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.csprojResolveAssemblyReference.cache
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.Form1.resources
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.Properties.Resources.resources
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.csproj.GenerateResource.Cache
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.csproj.CoreCompileInputs.cache
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.exe
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.pdb
+D:\price-tool\SteamItem_price_tool\bin\Debug\SteamItem_price_tool.exe.config
+D:\price-tool\SteamItem_price_tool\bin\Debug\SteamItem_price_tool.exe
+D:\price-tool\SteamItem_price_tool\bin\Debug\SteamItem_price_tool.pdb
+D:\price-tool\SteamItem_price_tool\bin\Debug\ClassLibrary.dll
+D:\price-tool\SteamItem_price_tool\bin\Debug\ClassLibrary.pdb
+D:\price-tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.csprojResolveAssemblyReference.cache
+D:\price-tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.Form1.resources
+D:\price-tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.Properties.Resources.resources
+D:\price-tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.csproj.GenerateResource.Cache
+D:\price-tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.csproj.CoreCompileInputs.cache
+D:\price-tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.exe
+D:\price-tool\SteamItem_price_tool\obj\Debug\SteamItem_price_tool.pdb

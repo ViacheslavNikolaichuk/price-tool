@@ -1,0 +1,18 @@
+D:\SteamItem_price_tool\ClassLibrary\bin\Debug\ClassLibrary.dll
+D:\SteamItem_price_tool\ClassLibrary\bin\Debug\ClassLibrary.pdb
+D:\SteamItem_price_tool\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+D:\SteamItem_price_tool\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+D:\SteamItem_price_tool\ClassLibrary\obj\Debug\ClassLibrary.dll
+D:\SteamItem_price_tool\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\Slavik Nikolaychuk\Desktop\SteamItem_price_tool\ClassLibrary\obj\Debug\ClassLibrary.pdb
+D:\price-tool\ClassLibrary\bin\Debug\ClassLibrary.dll
+D:\price-tool\ClassLibrary\bin\Debug\ClassLibrary.pdb
+D:\price-tool\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+D:\price-tool\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+D:\price-tool\ClassLibrary\obj\Debug\ClassLibrary.dll
+D:\price-tool\ClassLibrary\obj\Debug\ClassLibrary.pdb
