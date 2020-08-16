@@ -14,3 +14,5 @@ Taunt%3A Chain Break Dance https://steamcommunity.com/market/priceoverview/?curr
 Flying Desolаtion https://steamcommunity.com/market/priceoverview/?currency=18&appid=570&market_hash_name=Flying%20Desolаtion The remote server returned an error: (500) Internal Server Error.
  Golden Chaos Fulcrum https://steamcommunity.com/market/priceoverview/?currency=18&appid=570&market_hash_name=%20Golden%20Chaos%20Fulcrum The remote server returned an error: (500) Internal Server Error.
 Flying Desolаtion https://steamcommunity.com/market/priceoverview/?currency=18&appid=570&market_hash_name=Flying%20Desolаtion The remote server returned an error: (500) Internal Server Error.
+ Golden Chaos Fulcrum https://steamcommunity.com/market/priceoverview/?currency=18&appid=570&market_hash_name=%20Golden%20Chaos%20Fulcrum The remote server returned an error: (500) Internal Server Error.
+Flying Desolаtion https://steamcommunity.com/market/priceoverview/?currency=18&appid=570&market_hash_name=Flying%20Desolаtion The remote server returned an error: (500) Internal Server Error.

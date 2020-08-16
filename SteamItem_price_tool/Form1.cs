@@ -61,7 +61,7 @@ namespace SteamItem_price_tool
         {
             button_start.Visible = false;
 
-            int array_lenght = (int)numericUpDown_page_counter.Value * 56;
+            int array_lenght = (int)numericUpDown_page_counter.Value * 56;/*every page have 56 items on it*/
             string[] steam_link_price = new string[array_lenght];
             string[] steam_link_price_err = new string[array_lenght];
             string[] steam_link = new string[array_lenght];
@@ -115,14 +115,14 @@ namespace SteamItem_price_tool
 
             /*var column1 = new DataGridViewColumn();
             dataGridView.Columns.Add(column1);
-            column1.HeaderText = "Назва";*/
+            column1.HeaderText = "Name";*/
 
             dataGridView_dmarket.Rows.Clear();
             dataGridView_steam.Rows.Clear();
             dataGridView_error.Rows.Clear();
             dataGridView_full_info.Rows.Clear();
 
-            //Парсинг цін
+            //Parsing prices
             i = 0;
             j = 450;
             bool x;
@@ -148,7 +148,7 @@ namespace SteamItem_price_tool
                 } while (x);
             }
 
-            //Парсинг імен
+            //Parsing names
             i = 0;
             j = 450;
             for (int counter = 1; counter <= (int)numericUpDown_page_counter.Value; counter++)
@@ -172,10 +172,10 @@ namespace SteamItem_price_tool
             }
 
             int expected_number = 15;
-            //Створення посилання на ринок steam та отримання ціни
+            //Creating a link to the steam market and geting a price
             for (i = 0; i < array_lenght; i++)//56
             {
-                //обробка виключень
+                //exception handling
                 if (Regex.Match(dmarket_name[i], @"Насмешка").Success == true)
                 {
                     dmarket_name[i] = dmarket_name[i].Replace("Насмешка", "Taunt");
@@ -187,15 +187,15 @@ namespace SteamItem_price_tool
                 /*if (Regex.Match(dmarket_name[i], @"Комментатор:").Success == true)
                 {
                     dmarket_name[i] = dmarket_name[i].Replace("Комментатор:", "Announcer%3A");
-                }коментатор колись увімкнути*/
+                }коментатор turn it on one day*/
 
-                //виключення речей
+                //exclusion of items
                 if (Regex.Match(dmarket_name[i], @"Fortunes's").Success == true)
                 {
                     dmarket_name[i] = dmarket_name[i].Replace("Fortunes's", "Fortune's");
                 }
 
-                //абсолютне виключення
+                //absolute exception
                 if (Regex.Match(dmarket_name[i], @"Genuine Weather ").Success == true ||
                     Regex.Match(dmarket_name[i], @"Карточка игрока: ").Success == true ||
                     Regex.Match(dmarket_name[i], @"Стиль интерфейса").Success == true ||
@@ -247,7 +247,7 @@ namespace SteamItem_price_tool
                 ///////////////
                 if (is_correct[i] == true)
                 {
-                    //створення посилання з наступним завантаженням
+                    //creating link with and download
                     steam_link_price[i] = ("https://steamcommunity.com/market/priceoverview/?currency=18&appid=570&market_hash_name=" + dmarket_name[i].Replace(" ", "%20"));
                     steam_link[i] = ("https://steamcommunity.com/market/listings/570/" + dmarket_name[i].Replace(" ", "%20"));
                     try
@@ -285,7 +285,7 @@ namespace SteamItem_price_tool
                                 if (j == 30)
                                 {
                                     MessageBox.Show(
-                                        "Пройшло 30с. з отримання помилки (429)\nНастисніть 'ОК' щоб продовжити",
+                                        "It's been 30 seconds since an error (429)\nPress 'ОК' to continue",
                                         "Error",
                                         MessageBoxButtons.OK,
                                         MessageBoxIcon.Error,
@@ -295,7 +295,7 @@ namespace SteamItem_price_tool
                                 if (j == 40)
                                 {
                                     MessageBox.Show(
-                                        "Пройшло 40с. з отримання помилки (429)\nРекомендуємо змінити VPN сервер\nНастисніть 'ОК' щоб продовжити",
+                                        "It's been 40 seconds since an error (429)\nChange your VPN server\nPress 'ОК' to continue",
                                         "Error",
                                         MessageBoxButtons.OK,
                                         MessageBoxIcon.Error,
@@ -305,7 +305,7 @@ namespace SteamItem_price_tool
                                 if (j == 100)
                                 {
                                     MessageBox.Show(
-                                        "Пройшло 100с. з отримання помилки (429)\nДіло труба, звони Славіку\nНастисніть 'ОК' щоб продовжити",
+                                        "It's been 100 seconds since an error (429)\nChange your VPN server\nPress 'ОК' to continue",
                                         "Error",
                                         MessageBoxButtons.OK,
                                         MessageBoxIcon.Error,
@@ -315,7 +315,7 @@ namespace SteamItem_price_tool
                                 if (j == 200)
                                 {
                                     MessageBox.Show(
-                                        "Пройшло 200с. з отримання помилки (429)\nМожеш вимикати\nНастисніть 'ОК' щоб продовжити",
+                                        "It's been 200 seconds since an error (429)\nSomething went wrong\nPress 'ОК' to continue",
                                         "Error",
                                         MessageBoxButtons.OK,
                                         MessageBoxIcon.Error,
@@ -327,10 +327,10 @@ namespace SteamItem_price_tool
                         else
                         {
                             steam_item_price[i] = 0;
-                            //Запис помилкових посидань
+                            //Record of erroneous links
                             using (var writer = new StreamWriter(error_direct, true))
                             {
-                                //додавання запису до старих даних
+                                //adding an entry to old data
                                 writer.WriteLine(dmarket_name[i] + " " + steam_link_price[i] + " " + ex.Message);
                             }
                         }
@@ -344,7 +344,7 @@ namespace SteamItem_price_tool
                     label_counter.Text = i.ToString();
                     Thread.Sleep(1000);
                 }
-                //виведення помилкових даних
+                //output of erroneous data
                 else
                 {
                     string[] row_error = new string[] { dmarket_name_raw[i], dmarket_name[i], dmarket_price_tmp[i], dmarket_price[i].ToString(), steam_item_price[i].ToString() };
@@ -354,10 +354,12 @@ namespace SteamItem_price_tool
 
             for (i = 0; i < array_lenght; i++)
             {
-                //обрахунок
+                //calculation
                 if (steam_item_price[i] != 0 && dmarket_price[i] != 0)
                 {
-                    //чи варто купувати d_market
+                    //whether to buy d_market
+                    //the formula was created at the request of the customer
+                    //profit is derived from the difference in prices in the two markets and the difference between currencies
                     expected_price_steam[i] = (dmarket_price[i] - (dmarket_price[i] * double.Parse(discount.Text))) / double.Parse(coef_buy.Text);
                     if (expected_price_steam[i] <= steam_item_price[i])
                     {
@@ -365,7 +367,7 @@ namespace SteamItem_price_tool
                         dmarket_max_price[i] = steam_item_price[i] * double.Parse(coef_buy.Text);
                         //dmarket_buy[i] = "true";
 
-                        //Вивід інформації у таблицю для покупки на dmarket
+                        //Output information to the table for purchase on dmarket
                         string[] row_buy = new string[] { dmarket_name_raw[i], dmarket_price[i].ToString(), steam_item_price[i].ToString(), dmarket_max_price[i].ToString(), profit_buy[i].ToString(), steam_link[i] };
                         dataGridView_dmarket.Rows.Add(row_buy);
                     }
@@ -375,14 +377,16 @@ namespace SteamItem_price_tool
                         //dmarket_buy[i] = "false";
                     }
 
-                    //чи варто продавати в steam
+                    //whether to sell in steam
+                    //the formula was created at the request of the customer
+                    //profit is derived from the difference in prices in the two markets and the difference between currencies
                     expected_price_steam[i] = (dmarket_price[i] - (dmarket_price[i] * double.Parse(discount.Text))) / double.Parse(coef_sell.Text);
                     if (steam_item_price[i] <= expected_price_steam[i])
                     {
                         profit_sell[i] = expected_price_steam[i] / steam_item_price[i];
                         steam_max_price[i] = profit_sell[i] * steam_item_price[i];
 
-                        //Вивід інформації у таблицю для покупки в steam
+                        //Output information to the table for purchase in steam
                         string[] row_sell = new string[] { dmarket_name_raw[i], steam_item_price[i].ToString(), dmarket_price[i].ToString(), steam_max_price[i].ToString(), profit_sell[i].ToString(), steam_link[i] };
                         dataGridView_steam.Rows.Add(row_sell);
                     }
@@ -393,8 +397,8 @@ namespace SteamItem_price_tool
                 }
             }
 
-            //вивід всієї інформації
-            for(i = 0; i < array_lenght; i++)
+            //output of all information
+            for (i = 0; i < array_lenght; i++)
             {
                 string[] row_full_info = new string[] { dmarket_name_raw[i], dmarket_name[i], dmarket_price_tmp[i],
                     dmarket_price[i].ToString(), steam_item_price[i].ToString(), profit_buy[i].ToString(),
@@ -404,7 +408,7 @@ namespace SteamItem_price_tool
 
             button_start.Visible = true;
             MessageBox.Show(
-                "Програма завершила свою роботу\nНастисніть 'ОК' щоб продовжити",
+                "The program has completed its work\nPress 'ОК' to continue",
                 "Complete",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information,
